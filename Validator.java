@@ -39,12 +39,12 @@ public class Validator
         while (isValid == false)
         {
             i = getInt(sc, prompt);
-            if (i <= min)
+            if (i < min)
                 System.out.println(
-                    "Error! Number must be greater than " + min + ".");
-            else if (i >= max)
+                    "Error! Number must be " + min + " or greater.");
+            else if (i > max)
                 System.out.println(
-                    "Error! Number must be less than " + max + ".");
+                    "Error! Number must be " + max + " or less.");
             else
                 isValid = true;
         }
@@ -80,12 +80,12 @@ public class Validator
         while (isValid == false)
         {
             d = getDouble(sc, prompt);
-            if (d <= min)
+            if (d < min)
                 System.out.println(
-                    "Error! Number must be greater than " + min + ".");
-            else if (d >= max)
+                    "Error! Number must be " + min + " or greater.");
+            else if (d > max)
                 System.out.println(
-                    "Error! Number must be less than " + max + ".");
+                    "Error! Number must be " + max + " or less.");
             else
                 isValid = true;
         }
